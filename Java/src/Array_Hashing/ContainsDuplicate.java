@@ -20,16 +20,10 @@ public class ContainsDuplicate {
     public static boolean hasDuplicate(int[] nums) {
         HashMap<Integer, Integer> output = new HashMap<>();
         for (int num : nums) {
-            if (!output.containsKey(num)) {
-                output.put(num, output.getOrDefault(num, 1));
-            } else {
-                int freq = output.get(num) + 1;
-                output.put(num, freq);
-            }
-        }
-        for (int i : output.values()) {
-            if (i >= 2) {
+            if (output.containsKey(num)) {
                 return true;
+            } else {
+                output.put(num, output.getOrDefault(num, 1));
             }
         }
         return false;

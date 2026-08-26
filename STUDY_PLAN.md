@@ -4,43 +4,16 @@
 
 Target: **1–2 focused problems per day**.
 
-Quality matters more than raw problem count. A problem is not considered learned just because code passed once.
+Quality matters more than raw problem count. A problem is not considered learned just because the code passed once.
 
-## Core rule
+### First attempt
 
-**Solve the algorithm before solving the syntax.**
-
-Before coding, be able to state:
-
-- What data structure or pattern is involved?
-- What is the brute-force idea?
-- What is the improved idea?
-- Why does it work?
-- What is the expected time complexity?
-- What is the expected space complexity?
-
-Only after that should language-specific implementation become the focus.
-
-## First attempt
-
-- Spend roughly 20–30 minutes reasoning independently.
+- Spend roughly 20–30 minutes trying independently.
 - Identify the likely data structure or algorithmic pattern.
-- Write the solution in plain language or pseudocode if syntax is slowing down the reasoning.
 - Start with a straightforward solution when the optimized approach is unclear.
-- Test edge cases mentally before implementation.
+- Test edge cases before submitting.
 
-## Implementation pass
-
-Once the solution is understood:
-
-1. Implement it in a language of choice.
-2. Use documentation or AI assistance for syntax when needed, without outsourcing the algorithmic reasoning.
-3. Translate the same solution into another language when that comparison is useful.
-4. Notice how the data structures and syntax differ while the algorithm remains the same.
-
-There is no requirement to implement every problem in every language. Translation should reinforce understanding, not become repetitive busywork.
-
-## After solving
+### After solving
 
 Be able to answer:
 
@@ -49,11 +22,14 @@ Be able to answer:
 - What is the space complexity?
 - What alternative approach could be used?
 - What clue in the problem points toward this pattern?
-- Could I explain this solution without referring to a specific programming language?
 
-## If stuck
+Then implement the solution in whichever **core language** makes sense for that session: C#, Java, or Python.
 
-Using a hint or solution is fine, but the problem should be marked for review. Close the reference, restate the algorithm in your own words, then implement it independently.
+Translate the solution into another core language or TypeScript only when the translation adds learning value. The goal is not to repeat every problem four times.
+
+### If stuck
+
+Using a hint or solution is fine, but the problem should be marked for review. Close the reference, then implement the approach independently and explain it in your own words.
 
 ## Review schedule
 
@@ -63,14 +39,14 @@ Problems that were difficult or required help should be attempted again:
 - 1 week later
 - 1 month later
 
-The goal is to recover the solution from the pattern, not from memory of exact code.
+The goal is to solve the problem from the pattern, not from memory of the exact code.
 
 ## Progress tracker
 
 | Topic | Status | Notes |
 | --- | --- | --- |
-| Arrays & Hashing | In Progress | Existing solutions: Contains Duplicate, Valid Anagram, Two Sum |
-| Two Pointers | Started | Java Valid Palindrome exists |
+| Arrays & Hashing | In Progress | Existing Java/Python solutions to revisit; add C# as practice continues |
+| Two Pointers | In Progress | Early Java Valid Palindrome work exists |
 | Sliding Window | Not Started | |
 | Stack | Not Started | |
 | Binary Search | Not Started | |
@@ -92,24 +68,19 @@ The goal is to recover the solution from the pattern, not from memory of exact c
 
 Add a row after completing or revisiting each problem.
 
-| # | Problem | Topic | Algorithm understood? | Languages implemented | Time | Space | Review? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Contains Duplicate | Arrays & Hashing | Yes | C++, Java, JavaScript, Python | — | — | Review existing code |
-| 2 | Valid Anagram | Arrays & Hashing | Yes | C++, Java, JavaScript, Python | — | — | Review existing code |
-| 3 | Two Sum | Arrays & Hashing | Yes | C++, Java, JavaScript, Python | — | — | Review existing code |
-| 4 | Valid Palindrome | Two Pointers | Partial | Java | — | — | Finish/review |
+| # | Problem | Topic | First Language | Translated To | Solved Alone? | Time | Space | Review? |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Interview mode
 
 After building familiarity with the major patterns, periodically solve problems under interview conditions:
 
-1. No external help for the algorithm.
+1. No external help.
 2. Explain the approach before coding.
-3. State the data structures and complexity first.
-4. Choose an implementation language.
-5. Write the solution while talking through it.
-6. If a minor syntax detail is forgotten, describe what the code needs to do rather than losing the solution.
-7. Test the solution manually.
-8. Discuss improvements or tradeoffs.
+3. Choose a language deliberately rather than defaulting automatically.
+4. Write working code while talking through the implementation.
+5. Test the solution manually.
+6. State time and space complexity.
+7. Discuss possible improvements or tradeoffs.
 
-A successful interview-mode problem is one that can be **reasoned through and explained clearly**, with syntax serving the solution rather than driving it.
+A successful interview-mode problem is one that can be both **solved and explained clearly**, even if minor syntax details occasionally need to be recalled or looked up later.

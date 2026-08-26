@@ -19,13 +19,15 @@ The languages in this repository are implementation tools, not separate study tr
 
 ## Languages
 
-Current implementations may use:
+### Core languages
 
-- C#
-- Java
-- Python
-- JavaScript
-- C++
+- **C#** — closely aligned with current professional work and .NET interviews.
+- **Java** — reinforces strongly typed, object-oriented problem solving and remains common in technical interviews.
+- **Python** — useful for expressing algorithms concisely and focusing on the solution with minimal syntax overhead.
+
+### Optional translation language
+
+- **TypeScript** — use when it adds value, especially to reinforce TypeScript fluency for modern frontend/full-stack roles. It is not necessary to translate every problem into TypeScript.
 
 There is no requirement to become a syntax expert in every language before solving problems. The priority is being able to explain the algorithm clearly and then express that algorithm in code.
 
@@ -70,21 +72,20 @@ For each problem:
 3. Identify the underlying pattern.
 4. Improve the approach if there is a better time/space tradeoff.
 5. State the expected time and space complexity.
-6. Implement the solution in a language of choice.
-7. Translate it into additional languages when that adds learning value.
+6. Implement the solution in one core language.
+7. Translate it into another core language or TypeScript when that adds learning value.
 8. Mark the problem for review if significant help was required.
 
 ## Repository structure
 
-The existing language folders are preserved because they already contain useful solutions. Within each language, problems are grouped by NeetCode topic.
+Problems are organized first by language and then by NeetCode topic.
 
 ```text
 LeetCode_WorkSpace/
 ├── C#/
-├── C++/
 ├── Java/
-├── JavaScript/
 ├── Python/
+├── TypeScript/
 ├── STUDY_PLAN.md
 └── README.md
 ```
@@ -93,7 +94,7 @@ The long-term goal is consistency across languages: the same topic names, proble
 
 ## Existing progress
 
-The repository already contains multi-language implementations of early Arrays & Hashing problems such as:
+The repository already contains early Arrays & Hashing implementations in Java and Python for problems such as:
 
 - Contains Duplicate
 - Valid Anagram
@@ -101,7 +102,7 @@ The repository already contains multi-language implementations of early Arrays &
 
 Java also contains an early Two Pointers implementation for Valid Palindrome.
 
-These existing solutions are being preserved rather than replaced.
+These existing solutions are being preserved and can be revisited as part of the new study process.
 
 ## Solution notes
 

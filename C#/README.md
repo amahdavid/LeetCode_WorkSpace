@@ -1,6 +1,6 @@
 # C# Solutions
 
-C# is one implementation language in this workspace and is especially useful because it matches the current professional stack represented elsewhere in the portfolio.
+C# is one of the three **core implementation languages** in this workspace.
 
 The algorithm should be understood before implementation. C# practice here is about translating that reasoning into clean code using structures such as `Dictionary<TKey, TValue>`, `HashSet<T>`, arrays, lists, queues, stacks, and priority queues.
 

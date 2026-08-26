@@ -1,21 +1,44 @@
 # LeetCode Workspace
 
-A focused data structures and algorithms practice repository built around the **NeetCode 150** and software engineering interview preparation.
+A data structures and algorithms practice repository built around the **NeetCode 150** and software engineering interview preparation.
 
-## Primary language
+## Philosophy: solution first, syntax second
 
-**C#** is the default language for this repository.
+The main goal of this repository is to get better at **recognizing patterns and designing correct solutions**, independent of programming language syntax.
 
-Other languages may be used occasionally for comparison or language practice, but the goal is no longer to solve every problem in every language. The priority is to build strong pattern recognition, communicate solutions clearly, and become faster at solving interview problems in C#.
+Modern development tools can help with syntax, but they cannot replace understanding the algorithm. The workflow here is therefore:
+
+1. Understand the problem.
+2. Identify the pattern or data structure.
+3. Work out the solution in plain language or pseudocode.
+4. Analyze time and space complexity.
+5. Implement the solution in one language.
+6. Translate it into other languages when useful to reinforce portability and syntax familiarity.
+
+The languages in this repository are implementation tools, not separate study tracks.
+
+## Languages
+
+Current implementations may use:
+
+- C#
+- Java
+- Python
+- JavaScript
+- C++
+
+There is no requirement to become a syntax expert in every language before solving problems. The priority is being able to explain the algorithm clearly and then express that algorithm in code.
 
 ## Goals
 
-- Complete the NeetCode 150 in C#.
-- Learn the underlying problem-solving patterns instead of memorizing solutions.
-- Be able to explain brute-force and optimized approaches.
-- Track time and space complexity for every important solution.
+- Complete the NeetCode 150.
+- Build strong recognition of common algorithmic patterns.
+- Be able to explain brute-force and optimized approaches before coding.
+- Separate algorithmic thinking from language-specific syntax.
+- Translate known solutions between languages to build adaptability.
+- Track time and space complexity for important solutions.
 - Revisit weak problems using spaced repetition.
-- Build interview confidence through consistent practice.
+- Build confidence for technical interviews.
 
 ## Study order
 
@@ -42,65 +65,67 @@ Other languages may be used occasionally for comparison or language practice, bu
 
 For each problem:
 
-1. Read the problem and identify the inputs, outputs, and constraints.
-2. Try to recognize the underlying pattern.
-3. Write the brute-force approach first if the optimized solution is not obvious.
-4. Implement the solution without looking at an answer.
-5. Record the time and space complexity.
-6. Write a short explanation of the key idea.
-7. Mark the problem for review if the solution required significant help.
+1. Read the problem and identify inputs, outputs, and constraints.
+2. Describe a straightforward solution before worrying about syntax.
+3. Identify the underlying pattern.
+4. Improve the approach if there is a better time/space tradeoff.
+5. State the expected time and space complexity.
+6. Implement the solution in a language of choice.
+7. Translate it into additional languages when that adds learning value.
+8. Mark the problem for review if significant help was required.
 
 ## Repository structure
+
+The existing language folders are preserved because they already contain useful solutions. Within each language, problems are grouped by NeetCode topic.
 
 ```text
 LeetCode_WorkSpace/
 ├── C#/
-│   ├── ArraysAndHashing/
-│   ├── TwoPointers/
-│   ├── SlidingWindow/
-│   ├── Stack/
-│   ├── BinarySearch/
-│   ├── LinkedList/
-│   ├── Trees/
-│   ├── Tries/
-│   ├── HeapPriorityQueue/
-│   ├── Backtracking/
-│   ├── Graphs/
-│   ├── AdvancedGraphs/
-│   ├── DynamicProgramming1D/
-│   ├── DynamicProgramming2D/
-│   ├── Greedy/
-│   ├── Intervals/
-│   ├── MathAndGeometry/
-│   └── BitManipulation/
+├── C++/
+├── Java/
+├── JavaScript/
+├── Python/
 ├── STUDY_PLAN.md
 └── README.md
 ```
 
-Folders will be added as each topic is started rather than creating a large empty directory tree up front.
+The long-term goal is consistency across languages: the same topic names, problem names, and algorithmic reasoning should map cleanly between implementations.
 
-## Solution format
+## Existing progress
 
-Each important solution should include a short header similar to:
+The repository already contains multi-language implementations of early Arrays & Hashing problems such as:
 
-```csharp
-// Problem: Two Sum
-// Pattern: Hash Map
-// Difficulty: Easy
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-//
-// Key idea:
-// Store previously seen values and their indices in a dictionary.
-// For each number, check whether its complement already exists.
+- Contains Duplicate
+- Valid Anagram
+- Two Sum
+
+Java also contains an early Two Pointers implementation for Valid Palindrome.
+
+These existing solutions are being preserved rather than replaced.
+
+## Solution notes
+
+For important problems, record the language-independent reasoning before or alongside the code:
+
+```text
+Problem: Two Sum
+Pattern: Hash Map
+
+Idea:
+Store values seen so far and their indices.
+For each number, calculate the complement needed to reach the target.
+If the complement has already been seen, return the two indices.
+
+Time: O(n)
+Space: O(n)
 ```
 
-The code should remain readable enough that the approach can be explained during an interview without relying on comments.
+Then implement that same idea using the idioms of the selected language.
 
 ## Progress
 
-The detailed study plan and progress tracker live in [`STUDY_PLAN.md`](STUDY_PLAN.md).
+The study routine and progress tracker live in [`STUDY_PLAN.md`](STUDY_PLAN.md).
 
-## Practice philosophy
+## What success looks like
 
-The objective of this repository is not GitHub activity for its own sake. It is to become better at recognizing common algorithmic patterns, writing correct code under interview constraints, and clearly explaining engineering tradeoffs.
+The objective is not to memorize hundreds of code snippets or manufacture GitHub activity. Success means being able to look at an unfamiliar problem, reason toward a solution, explain why it works, evaluate its complexity, and then turn that solution into working code even if some language-specific syntax needs to be looked up or assisted by tooling.

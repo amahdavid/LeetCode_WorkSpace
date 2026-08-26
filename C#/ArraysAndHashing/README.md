@@ -13,19 +13,21 @@ Common signals for arrays and hashing problems include:
 - Grouping values by a derived key
 - Avoiding repeated scans of an array
 
-## Core C# tools
+## C# tools to know
 
 Become comfortable using:
 
 - `Dictionary<TKey, TValue>`
 - `HashSet<T>`
-- Arrays
-- Lists
-- String/character iteration
+- arrays
+- lists
+- string/character iteration
+
+The goal is not to memorize APIs before solving the problem. Work out the language-independent approach first, then use these structures to express it in C#.
 
 ## Problems
 
-Add each solution as it is completed. Prefer descriptive filenames such as:
+Add C# solutions as they are completed or revisited. Prefer descriptive filenames such as:
 
 ```text
 ContainsDuplicate.cs

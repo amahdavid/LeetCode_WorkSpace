@@ -2,6 +2,10 @@ namespace LeetCode;
 
 public class Solution
 {
+    // Current approach: build a frequency dictionary for each string and compare them.
+    // Possible optimization: use one frequency map and increment for s / decrement for t.
+    // Since the problem is limited to lowercase English letters, an int[26] can reduce
+    // the extra space to O(1). Revisit this optimization later.
     public bool IsAnagram(string s, string t)
     {
         if (s.Length != t.Length)
